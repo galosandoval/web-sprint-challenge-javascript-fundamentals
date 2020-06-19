@@ -18,7 +18,18 @@ myFunction();
 
 // Explanation: 
 
+//nestedfunction() can access 'internal' because they are both in the block of myFunction, they are both children
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation(param){
+  let total = 0, count = 1;
+  while (count <= param){
+    total += count;
+    count += 1;
+  }
+  return total;
+}
+
+console.log(summation(4));
